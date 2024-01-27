@@ -4,7 +4,7 @@
 
 ## Tools
 
-- :books: [pro multithreading and memory management for ios and os x]([https://www.manning.com/books/swift-in-depth](https://www.amazon.com/Pro-Multithreading-Memory-Management-iOS/dp/1430241160))
+- :books: [pro multithreading and memory management for ios and os x](https://www.amazon.com/Pro-Multithreading-Memory-Management-iOS/dp/1430241160)
 
 ### brief contents
 
