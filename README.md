@@ -12,7 +12,7 @@ pro multithreading and memory management for ios and os x를 읽고 정리합니
 
 |      | Chapter Name                                                 | Date         |
 | ---- | ------------------------------------------------------------ | ------------ |
-| 1    | [ARC(자동 레퍼런스 카운팅) 이전의 삶](ARC 이전의 삶.md)         | 
+| 1    | [ARC 이전의 삶](ARC 이전의 삶.md)         | 2024.02.13 |
 | 2    | ARC 규칙
 | 3    | ARC 구현
 | 4    | 블록 시작하기
