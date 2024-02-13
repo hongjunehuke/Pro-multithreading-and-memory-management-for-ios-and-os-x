@@ -1,6 +1,8 @@
 # pro-multithreading-and-memory-management-for-ios-and-os-x
 
-: pro multithreading and memory management for ios and os x를 읽고 정리합니다.
+![image](https://github.com/hongjunehuke/Pro-multithreading-and-memory-management-for-ios-and-os-x/assets/83629193/c1e49c51-ee15-419c-ab1e-96359a4eb9b9)
+
+pro multithreading and memory management for ios and os x를 읽고 정리합니다.
 
 ## Tools
 
