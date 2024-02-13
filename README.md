@@ -12,7 +12,7 @@ pro multithreading and memory management for ios and os x를 읽고 정리합니
 
 |      | Chapter Name                                                 | Date         |
 | ---- | ------------------------------------------------------------ | ------------ |
-| 1    | [ARC 이전의 삶]()         | 2024.02.13 |
+| 1    | [ARC 이전의 삶](https://github.com/hongjunehuke/Pro-multithreading-and-memory-management-for-ios-and-os-x/blob/master/ARC%20%EC%9D%B4%EC%A0%84%EC%9D%98%20%EC%82%B6.md)         | 2024.02.13 |
 | 2    | ARC 규칙
 | 3    | ARC 구현
 | 4    | 블록 시작하기
