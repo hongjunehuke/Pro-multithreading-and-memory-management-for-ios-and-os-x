@@ -54,12 +54,31 @@ Coca Framework 내부의 Foundation Framework에서 제공하는 NSObject 클래
 지금부터 앞에서 소개한 네 가지 레퍼런스 카운팅 규칙을 살펴봅시다.
 
 ### 1. 생성하는 모든 객체는 동시에 소유권을 갖습니다.
+
 NSObject 클래스에서 제공하는 alloc, new, copy, mutableCopy 함수를 사용하여 객체를 생성하는 동시에 해당 객체의 소유권을 가집니다.
+코드를 통해 함수를 사용하는 방법을 살펴봅시다.
 
 아래 코드는 Swift 코드가 아닌 Objective-C 코드지만 어떤 동작을 하는지 정도는 알 수 있는 코드입니다.
 
+```Objective-C
+// 객체 생성 및 소유권 획득
+id obj = [[NSObject alloc] init]; // 이제 객체의 소유권을 가집니다.
+```
 
+alloc 함수를 호출하여 객체를 생성함과 동시에 객체의 소유권도 가집니다.
+이때 obj 변수는 생성된 객체의 포인터를 갖습니다.
 
+```Objective-C
+// 객체 생성 및 소유권 획득
+id obj = [NSObject new]; // 이제 객체의 소유권을 가집니다.
+```
+
+[NSObject new]와 [[NSObject alloc] init]은 같은 기능을 수행합니다.
+
+copy 함수는 객체의 복사본을 생성하고, mutableCopy 함수는 객체의 변경 가능한(mutable) 복사본을 생성합니다.
+이때 copy, mutableCopy 함수 모두 alloc과 new 함수와 동일하게 객체 생성과 함께 객체의 소유권까지 가집니다.
+
+### 2. "retain"을 이용해 객체의 소유권을 획득합니다.
 
 
 
