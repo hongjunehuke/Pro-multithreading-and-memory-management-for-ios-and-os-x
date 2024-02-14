@@ -42,6 +42,7 @@ Objective-C에서 객체를 관리하는 방법은 네 가지로 나뉩니다.
 
 위에서 Objective-C에서 객체를 관리하는 방법 네 가지를 실행시키는 함수를 소개하려 합니다.
 
+- 객체를 관리하는 함수
 1. 객체를 생성 & 소유권 획득 -> alloc/new/copy/mutableCopy 함수
 2. 소유권 획득 -> retain 함수
 3. 소유권 포기 -> release 함수
@@ -50,6 +51,12 @@ Objective-C에서 객체를 관리하는 방법은 네 가지로 나뉩니다.
 하지만 위에서 소개한 함수들을 Objective-C에서 제공하지 않습니다.
 Coca Framework 내부의 Foundation Framework에서 제공하는 NSObject 클래스에서 제공하는 함수들입니다.
 
+지금부터 앞에서 소개한 네 가지 레퍼런스 카운팅 규칙을 살펴봅시다.
+
+### 1. 생성하는 모든 객체는 동시에 소유권을 갖습니다.
+NSObject 클래스에서 제공하는 alloc, new, copy, mutableCopy 함수를 사용하여 객체를 생성하는 동시에 해당 객체의 소유권을 가집니다.
+
+아래 코드는 Swift 코드가 아닌 Objective-C 코드지만 어떤 동작을 하는지 정도는 알 수 있는 코드입니다.
 
 
 
